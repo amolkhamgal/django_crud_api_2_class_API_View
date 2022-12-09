@@ -20,5 +20,7 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/emp/',views.Emp.as_view())
+    path('api/emp/',views.Emp.as_view()),
+    path('api/emp/update/<pk>',views.EmpUpdateDelete.as_view())
+
 ]
